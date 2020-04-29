@@ -1,0 +1,81 @@
+#header{
+    background: linear-gradient(30deg,#cc2b5e,#753a88);
+    color:white;
+    text-shadow:5px 5px 10px whitesmoke;
+    height:150px;
+    padding-top:30px;
+    border:1px black solid;
+    text-align:center;
+    animation-name:header;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+@keyframes header{
+    0%{ text-shadow:5px 5px 10px whitesmoke;}
+    50%{ text-shadow:2px 2px 5px whitesmoke;}
+    100%{ text-shadow:5px 5px 10px whitesmoke;}
+}
+.navbar{
+display:flex;
+background-color:#555;
+border:ridge;
+border-color:red blue green yellow;
+}
+.navbar a{
+color:white;
+padding:14px 20px;
+text-decoration:none;
+text-align:center;
+
+}
+.navbar a:active{
+background-color:hotpink;
+}
+.navbar a:hover{
+background-color: #4CAF50;
+
+
+}
+#main{
+    height:1000px;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6,whitesmoke);
+    padding:5px;
+    border:1px solid black;
+    text-align:center;
+    color:white;
+}
+
+#row{
+    display:flex;
+}
+#column1{
+    flex:50%;
+    padding:5px;
+    height:800px;
+    border:1px solid black;
+    
+    
+}
+#column2{
+    flex:33.33%;
+    padding:5px;
+    height:600px;
+    border:1px solid black;
+    
+}
+#column3{
+    flex:25%;
+    padding:5px;
+    height:400px;
+    border:1px solid black;
+    color:white;
+    
+}
+#footer{
+    background: linear-gradient(30deg,black,grey);
+    height:100px;
+    border:1px solid black;
+    text-align:center;
+    padding:5px;
+    color:white;
+}
