@@ -1,10 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 #header{
     /*background: linear-gradient(30deg,#cc2b5e,#753a88);*/
+    position:relative;
     background: #5cdb95;
     color:#EDF5E1;
+    position:relative;
     text-shadow:5px 5px 10px #EDF5E1;
-    height:150px;
-    padding-top:30px;
+    height:50%;
+    padding:5%;
     font-size:30px;
     text-align:center;
     animation-name:header;
@@ -19,8 +26,9 @@
 .navbar{
 display:flex;
 background:#5cdb95;
-
+align-items:center;
 justify-content: center;
+flex-wrap: wrap;
 /*border:ridge;
 border-color:red blue green yellow;*/
 }
@@ -89,10 +97,15 @@ background-color: #EDF5E1;
 
 #row{
     display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    height:40%;
+    
 }
 .column{
-   float:left;
-   height:400px;
+   /* float:left; */
+   height:40%;
    padding:5px;
    color:#05386B; 
    margin:5px;
@@ -103,19 +116,27 @@ background-color: #EDF5E1;
     }
 .r1c2{
     width:75%;
+    /* margin-top:-5px; */
+    padding-bottom:15px;
+
 } 
+.slave{
+    margin-left:20px;
+}
 #minirow{
     display:flex;
     flex-direction:column;
     padding:5px;
+    height:50%;
 
 } 
 #quiz{
+    position: relative;
     height:85px;
     text-align:center;
     margin:5px;
     margin-left: 30px;
-    width:200px;
+    width:80%;
     border:1px solid black;
     box-shadow:2px 2px 5px black;
     background:#EDF5E1;
@@ -167,14 +188,20 @@ button:hover{
     height:400px;
     background-color:#5cdb95;
     margin:5px;
-
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 50px; */
+}
+.C-master{
+    margin:auto;
 }
 #C-mini-l{
     height:380px;
     width:300px;
     border-radius:50%;
     background-color:#EDF5E1;
-    margin-right:5px;
+    /* margin-right:5px; */
+    /* padding-left: 50px; */
     box-shadow: 4px 4px 10px black;
     
 }
@@ -215,8 +242,8 @@ button:hover{
     
 }
 #mini-C2{
-    width:300px;
-    height:400px;
+    width:70%;
+    height:80%;
     margin:auto;
     border:1px solid black;
     border-radius: 12px;
@@ -245,7 +272,7 @@ button:hover{
 }
 #slideshow{
  background:#5cdb95;
- height:600px;
+ height:60%;
  width:99%;
  margin:5px;
  padding:5px;
@@ -288,4 +315,25 @@ button:hover{
     text-align:center;
     padding:5px;
     color:#EDF5E1;
+    margin-top:5px;
+}
+#row4{
+    display:flex;
+    /*background: linear-gradient(30deg,#cc2b5e,#753a88);*/
+    background:#5cdb95;
+    padding:10px;
+    
+    width:99%;
+    
+    height:200px;
+    border:1px solid black;
+    border-radius: 12px;
+    justify-content: center;
+    align-items:center;
+    
+}
+@media only screen and (min-width:768px){
+    #row4{
+        display:none;
+    }
 }
